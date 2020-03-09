@@ -23,10 +23,10 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
 			 require_once('readOne.php');
 				        break;
 				case 'categories':
-			      require_once('categories.php');
+			      require_once('displayCat.php');
 			          break;
         case 'create':
-        		require_once('form_create.php');
+        		require_once('create.php');
         			  break;
         case 'delete':
         		require_once('delete.php');
