@@ -216,14 +216,6 @@ min-height: 1000px;
 	background: #108991;
 }
 
-.reg1 {
-	height:auto;
-	width: 100%;
-	margin: 20px;
-	border-collapse: collapse;
-	display:inline-block;
-}
-
 .reg1 table, th, td {
   border: 1px solid black;
 }
