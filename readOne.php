@@ -14,21 +14,20 @@
         <div id="content">
 		
 <h1>Product Details</h1>
-	<table class="reg1">
-
-				<tr>
-                    <th>Product</th>
-					  <th>Price</th>
-                    <th>Category</th>
-					  <th>Description</th>
-                </tr>
+	<table id="list">
+	<tr>
+                <th>Product</th>
+		<th>Price</th>
+                <th>Category</th>
+		<th>Description</th>
+        </tr>
 								
-				 <tr>
-					<td> <?php echo $result['name']; ?> </td>
-					<td><?php echo $result['price']; ?> </td>
-					<td><?php echo $result['category_name']; ?> </td>
-					<td><?php echo $result['description'];?> </td>
-				 </tr>
+	<tr>
+		<td> <?php echo $result['name']; ?> </td>
+		<td><?php echo $result['price']; ?> </td>
+		<td><?php echo $result['category_name']; ?> </td>
+		<td><?php echo $result['description'];?> </td>
+	 </tr>
 	</table>
 <div class="addps">
   <ul>
