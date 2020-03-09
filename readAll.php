@@ -35,7 +35,6 @@ if(isset($_POST['search'])){
 
 <table id="list">
     <tr>
-        <th>ID</th>
         <th>Product</th>
         <th>Description</th>
         <th>Price</th>
