@@ -7,7 +7,7 @@
   $result = $details['records'];
 ?>
 <h1>Product Details</h1>
-<table class="list">
+<table class="reg1">
   <tr>
     <th>Name</th>
     <td> <?php echo $result['name']; ?> </td>
