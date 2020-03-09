@@ -26,7 +26,7 @@ if(isset($_POST['search'])){
 
 <div id="cover">
 <br>
-	<form action="index.php?page=product" method="POST">
+	<form method="POST" action="index.php">
  		 Search:<input type="text" name="search" placeholder="Enter Product Name">
 			<input type="submit" name="submit" value="Search">
 	</form>
@@ -45,11 +45,10 @@ if(isset($_POST['search'])){
 foreach($list as $value){
     ?>
     <tr>
-        <td><?php echo $value['id'];?></td>
-        <td id ="link"><a href="product-details.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
-        <td><?php echo $value['description'];?></td>
-        <td><?php echo $value['price'];?></td>
-        <td><?php echo $value['category_name'];?></td>
+	   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['name']; ?></a></td>
+	   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['description']; ?></a></td>
+	   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['price']; ?></a></td>
+	   <td><a href="index.php?page=readone&id=<?php echo $result['id'];?>"><?php echo $result['category_name']; ?></a></td>
     </tr>
 <?php
 }
