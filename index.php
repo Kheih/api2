@@ -1,10 +1,10 @@
 <?php 
-$page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
+$load = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
 ?>
 <!DOCTYPE html>
 <html> 
     <head>
-      <title>Endterm Activity #1</title>
+      <title>Endterm Activity</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
@@ -16,14 +16,14 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
       <a href="index.php?page=create">Add Product</a>
       </div>
 
-    <div id="content">         
+    <div class="content">         
       <?php 
-        switch($page){
+        switch($load){
           case 'readone':
 			 require_once('readOne.php');
 				        break;
-				case 'categories':
-			      require_once('displayCat.php');
+	case 'categories':
+			 require_once('displayCat.php');
 			          break;
         case 'create':
         		require_once('create.php');
@@ -40,6 +40,5 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
         }
     ?>
       </div>
-  </div>    
     </body>
 </html>
