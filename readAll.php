@@ -24,11 +24,12 @@ if(isset($_POST['search'])){
 <h1> Product List </h1>
 
 
-    <div id="cover">
-    <form action="index.php?page=product" method="POST">
-   Search:<input type="text" name="search" placeholder="Enter Product Name">
-		<input type="submit" name="submit" value="Search">
-  </form>
+<div id="cover">
+	<form action="index.php?page=product" method="POST">
+	   <br>
+ 		 Search:<input type="text" name="search" placeholder="Enter Product Name">
+			<input type="submit" name="submit" value="Search">
+	</form>
 </div>
 
 <table id="list">
