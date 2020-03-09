@@ -12,7 +12,7 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
   <div id="container">  
       <div class="navbar">
         <a href="index.php?">Products</a>
-        <a href="index.php?page=displaycat">Display Categories</a>
+        <a href="index.php?page=displaycat">Categories</a>
       <a href="index.php?page=create">Add Product</a>
       </div>
 
@@ -35,7 +35,7 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
             require_once('update.php');
                 break;
 				default:
-					  require_once('read_all.php');
+					  require_once('readAll.php');
 					      break;
         }
     ?>
