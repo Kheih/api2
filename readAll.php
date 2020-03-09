@@ -45,7 +45,7 @@ if(isset($_POST['search'])){
 foreach($list as $value){
     ?>
     <tr>   <td><?php echo $value['id'];?></td>
-        <td id ="link"><a href="readOne.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
+        <td id ="link"><a href="index.php?page=readone&id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
         <td><?php echo $value['description'];?></td>
         <td><?php echo $value['price'];?></td>
         <td><?php echo $value['category_name'];?></td>
