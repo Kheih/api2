@@ -221,8 +221,7 @@ min-height: 1000px;
 }
 
 .reg1 th{
-	background-color: #008000;
-	color: #ffffff;
+	color: #2f2f2b;
 	font-size: 16px;
 	width: 150px;
 }
@@ -233,8 +232,4 @@ min-height: 1000px;
 	color: #2f2f2b;
 	font-size: 16px;
 	width: 865px;
-}
-
-.reg1 th, td{
-	height: 50px;
 }
