@@ -22,7 +22,7 @@ $load = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
           case 'readone':
 			 require_once('readOne.php');
 				        break;
-	case 'categories':
+	case 'displaycat':
 			 require_once('displayCat.php');
 			          break;
         case 'create':
