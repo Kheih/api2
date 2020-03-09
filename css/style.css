@@ -215,20 +215,3 @@ min-height: 1000px;
 {
 	background: #108991;
 }
-.reg1 table, th, td {
-  border: 1px solid black;
-}
-
-.reg1 th{
-	color: #2f2f2b;
-	font-size: 16px;
-	width: 150px;
-}
-
-.reg1 td{
-	padding: 10px;
-	text-align: left;
-	color: #86f7d6;
-	font-size: 16px;
-	width: 865px;
-}
