@@ -6,7 +6,7 @@
 ?>
 <br>
 <div class="form-style-5">
-			<form action="pro_create.php" method="POST">
+			<form action="createProd.php" method="POST">
 			<h1> Add Product </h1>
 				Product:<input type="text" name="name" placeholder="name"/>
 				Description:<input type="text" name="description" placeholder="description"/>
