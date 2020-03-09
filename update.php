@@ -27,7 +27,7 @@
 					
 		<div class="form-style-5">		
 				<h1> Update Product </h1>
-				<form action="pro_update.php?id=<?php echo $id ?>" method="POST">
+				<form action="updateProd.php?id=<?php echo $id; ?>" method="POST">
 					Product:<input type="text" name="name" value="<?php echo $result['name'];?>"/>
 					Description:<input type="text" name="description" value="<?php echo $result['description']; ?>"/>
 					Price:<input type="text" name="price" value="<?php echo $result['price']; ?>"/>
