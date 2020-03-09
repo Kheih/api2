@@ -16,16 +16,6 @@
     </head>
 	<br>
 <div id="container">
-	
-		<div id="content">
-					<div class="navbar">
-						<a href="index.php?page=home" id = "home">Home</a>
-						<a href="index.php?page=product" id = "product">Show</a>
-						<a href="index.php?page=categories" id = "category">Category</a>
-						<a href="index.php?page=create" id = "create">Create</a>
-					</div>
-					
-					
 			<div class="form-style-5">		
 				<h1> Update Product </h1>
 				<form action="updateProd.php?id=<?php echo $id; ?>" method="POST">
