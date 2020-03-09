@@ -11,9 +11,9 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
 
   <div id="container">  
       <div class="navbar">
-        <a href="index.php?page=product" id = "product">Products</a>
-        <a href="index.php?page=categories" id = "category">Category</a>
-        <a href="index.php?page=create" id = "create">Add Product</a>
+        <a href="index.php?">Products</a>
+        <a href="index.php?page=displaycat">Display Categories</a>
+      <a href="index.php?page=create">Add Product</a>
       </div>
 
     <div id="content">         
