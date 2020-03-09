@@ -1,3 +1,4 @@
+  
 <?php
   $id = $_GET['id'];
   $json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id='.$id);
@@ -5,30 +6,25 @@
   $details = array('records' => $data);
   $result = $details['records'];
 ?>
-<div id="container">
-    <div class="navbar">
-        <a href="index.php?page=product" id = "product">Products</a>
-        <a href="index.php?page=categories" id = "category">Category</a>
-        <a href="index.php?page=create" id = "create">Create</a>
-    </div>
-        <div id="content">
-		
 <h1>Product Details</h1>
-	<table id="list">
-	<tr>
-                <th>Product</th>
-		<th>Price</th>
-                <th>Category</th>
-		<th>Description</th>
-        </tr>
-								
-	<tr>
-		<td> <?php echo $result['name']; ?> </td>
-		<td><?php echo $result['price']; ?> </td>
-		<td><?php echo $result['category_name']; ?> </td>
-		<td><?php echo $result['description'];?> </td>
-	 </tr>
-	</table>
+<table class="reg1">
+  <tr>
+    <th>Name</th>
+    <td> <?php echo $result['name']; ?> </td>
+  </tr>
+  <tr>
+    <th>Price</th>
+    <td><?php echo $result['price']; ?> </td>
+ </tr>
+ <tr>
+   <th>Category</th>
+   <td><?php echo $result['category_name']; ?> </td>
+ </tr>
+ <tr>
+   <th>Description</th>
+   <td><?php echo $result['description'];?> </td>
+ </tr>
+</table>
 <div class="addps">
   <ul>
     <li><a href="index.php?page=delete&id=<?php echo $id; ?>">Delete</a></li>
