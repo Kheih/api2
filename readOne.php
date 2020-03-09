@@ -1,4 +1,3 @@
-  
 <?php
   $id = $_GET['id'];
   $json = file_get_contents('http://rdapi.herokuapp.com/product/read_one.php?id='.$id);
@@ -25,9 +24,13 @@
    <td><?php echo $result['description'];?> </td>
  </tr>
 </table>
+<div class="addps">
+  <ul>
+    <li><a href="index.php?page=delete&id=<?php echo $id; ?>">Delete</a></li>
+  </ul>
 </div>
-		<footer class="header">
-			<a class="w3-button w3-round-large w3-teal w3-margin" href="index.php?page=update&id=<?php echo $id ?>">Edit</a>
-			<a class="w3-button w3-round-large w3-yellow w3-margin" href="pro_delete.php?id=<?php echo $id ?>">Delete</a>
-		</footer>
-	</div>
+<div class="addps1">
+  <ul>
+    <li><a href="index.php?page=update&id=<?php echo $id; ?>">Update</a></li>
+  </ul>
+</div>
