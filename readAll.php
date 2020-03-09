@@ -25,11 +25,12 @@ if(isset($_POST['search'])){
 
 
 <div id="cover">
+<br>
 	<form action="index.php?page=product" method="POST">
-	   <br>
  		 Search:<input type="text" name="search" placeholder="Enter Product Name">
 			<input type="submit" name="submit" value="Search">
 	</form>
+</br>
 </div>
 
 <table id="list">
